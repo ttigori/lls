@@ -1,5 +1,3 @@
-import './App.css';
-
 import Classroom from './classroom/Classroom'
 
 function App() {
