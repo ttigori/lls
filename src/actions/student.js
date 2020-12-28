@@ -11,16 +11,12 @@ export const get = () => (dispatch) => dispatch({
   type: GET_STUDENTS,
 });
 
-export const update = (id, newData) => (dispatch) => dispatch({
+export const update = (newData) => (dispatch) => dispatch({
   type: UPDATE_STUDENT,
-  payload: {
-    id,
-    newData,
-  },
+  payload: newData,
 });
 
 export const deleteS = (id) => (dispatch) => dispatch({
   type: DELETE_STUDENT,
   payload: id,
-
 });

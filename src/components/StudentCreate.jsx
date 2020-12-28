@@ -12,23 +12,24 @@ const StudentCreate = () => {
   const { students } = useSelector((state) => state.student);
 
   const dispatch = useDispatch();
-  const addStudent = () => {
-    dispatch(add({
-      id: students.length += 1,
-      last_name,
-      first_name,
-      age,
-      gender,
-    }));
+  const addStudent = (e) => {
+    e.preventDefault();
+    if (last_name && first_name && age && gender) {
+      dispatch(add({
+        id: students.length += 1,
+        last_name,
+        first_name,
+        age,
+        gender,
+      }));
 
-    setRedirect(true);
+      setRedirect(true);
+    }
   };
 
   if (redirect) {
     return <Redirect to="/" />;
   }
-
-  console.log('gender', gender);
 
   return (
 
@@ -52,6 +53,7 @@ const StudentCreate = () => {
         <div className="mb-3">
           <label htmlFor="gender" className="form-label">Sexe</label>
           <select onChange={(e) => setGender(e.target.value)} id="gender" className="form-select" aria-label="Default select example">
+            <option value="none" selected disabled hidden> Selectionnez le sexe </option>
             <option value="Masculin">Masculin</option>
             <option value="Féminin">Féminin</option>
           </select>
@@ -62,7 +64,7 @@ const StudentCreate = () => {
         }}
         >
           <button onClick={addStudent} type="submit" className="btn add">Ajouter</button>
-          <button type="button" className="btn delete">Annuler</button>
+          <button onClick={() => setRedirect(true)} type="button" className="btn delete">Annuler</button>
         </div>
 
       </form>

@@ -20,6 +20,7 @@ const Classroom = () => {
       <div className="students">
         {students.map((student) => (
           <Student
+            id={student.id}
             first_name={student.first_name}
             last_name={student.last_name}
             gender={student.gender}

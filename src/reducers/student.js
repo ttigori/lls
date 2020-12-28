@@ -15,9 +15,10 @@ export default (state = initialState, action) => {
   const { payload, type } = action;
   switch (type) {
     case ADD_STUDENT: {
-      console.log('PAYLOAD', payload);
       const newStudents = state.students;
+      console.log('PAYLOAD', payload);
       newStudents.push(payload);
+
       return {
         ...state,
         students: newStudents,
@@ -30,7 +31,7 @@ export default (state = initialState, action) => {
     }
     case DELETE_STUDENT: {
       let newStudents = state.students;
-      newStudents = newStudents.filter((student) => !payload.includes(student.id));
+      newStudents = newStudents.filter((student) => payload !== student.id);
 
       return {
         ...state,
@@ -38,11 +39,11 @@ export default (state = initialState, action) => {
       };
     }
     case UPDATE_STUDENT: {
-      const { newData: newStudent } = payload;
       const newStudents = state.students;
-      const index = newStudents.findIndex((student) => student.id === newStudent.id);
+      const index = newStudents
+        .findIndex((student) => Number(student.id) === Number(payload.id));
       if (index !== -1) {
-        newStudents.splice(index, 1, newStudent);
+        newStudents.splice(index, 1, payload);
       }
 
       return {
