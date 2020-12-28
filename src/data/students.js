@@ -1,9 +1,7 @@
-import { createPortal } from 'react-dom';
-
 const students = [
   {
     id: 1,
-    fist_name: 'Aristide',
+    first_name: 'Aristide',
     last_name: 'Briot',
     age: 10,
     gender: 'Masculin',
@@ -11,7 +9,7 @@ const students = [
   },
   {
     id: 2,
-    fist_name: 'Aurelie',
+    first_name: 'Aurelie',
     last_name: 'Brière',
     age: 9,
     gender: 'Feminin',
@@ -19,15 +17,15 @@ const students = [
   },
   {
     id: 3,
-    fist_name: 'Jean',
+    first_name: 'Jean',
     last_name: 'Meunier',
     age: 10,
     gender: 'Masculin',
 
   },
   {
-    id: 3,
-    fist_name: 'Emma',
+    id: 4,
+    first_name: 'Emma',
     last_name: 'Jardinère',
     age: 10,
     gender: 'Feminin',
@@ -35,7 +33,7 @@ const students = [
   },
   {
     id: 5,
-    fist_name: 'Jeanne',
+    first_name: 'Jeanne',
     last_name: 'Dujardin',
     age: 9,
     gender: 'Feminin',

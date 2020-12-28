@@ -5,17 +5,19 @@ import {
   UPDATE_STUDENT,
 } from '../actions/types';
 
+import studentsData from '../data/students';
+
 const initialState = {
-  students: [],
+  students: studentsData,
 };
 
 export default (state = initialState, action) => {
   const { payload, type } = action;
   switch (type) {
     case ADD_STUDENT: {
+      console.log('PAYLOAD', payload);
       const newStudents = state.students;
       newStudents.push(payload);
-
       return {
         ...state,
         students: newStudents,
