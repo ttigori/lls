@@ -8,31 +8,31 @@ const Student = () => {
 
 
   return(
-    <div className="card" style={{width: '18rem', padding: '10px'}}>
+    <div className="card">
       <img className="card-img-top" src={studentImg} alt="Image élève"/>
       <div class="card-body">
-        <div style={{marginBottom: '10px'}}>
-          <span>
-            Nom: Adrien
+        <div className="card-item">
+          <span style={{fontSize: '1.2rem', marginRight: '5px'}}>
+            Nom:
           </span>
+          Adrien
         </div>
 
-        <div style={{marginBottom: '10px'}}>
-          <span>
-            Prenom: Adrien
-          </span>
+        <div className="card-item">
+          <span> Prenom: </span> Adrien
         </div>
 
-        <div style={{marginBottom: '10px'}}>
+        <div className="card-item">
           <span>
-            Sexe: Masculin
+            Sexe:
           </span>
+          Masculin
         </div>
 
-        <div style={{justifyContent: 'space-between', display: 'flex'}}>
+        <div className="btn-container">
 
-          <button>Modifier</button>
-          <button>Supprimer</button>
+          <button className="btn">Modifier</button>
+          <button className="btn delete">Supprimer</button>
 
         </div>
 

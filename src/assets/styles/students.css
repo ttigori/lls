@@ -1,0 +1,52 @@
+.card {
+  background-color: #fff;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  width: 18rem;
+  padding: 10px;
+}
+
+.card-item {
+  margin-bottom: 10px;
+}
+
+.card-item span {
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+
+.card:hover {
+  transform: scale(0.98);
+}
+
+.btn-container {
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 5px 15px;
+  cursor: pointer;
+  background: #5cb85c;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.delete {
+  background: #d9534f;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px #fff solid;
+}
+
+.btn:hover {
+  transform: scale(0.98);
+}
