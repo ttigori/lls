@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Student from '../components/Student';
 import students from '../data/students';
 
@@ -7,7 +8,9 @@ const Classroom = () => (
 
     <div style={{ marginLeft: '10px', marginBottom: '50px', marginTop: '25px' }}>
 
-      <button type="button" className="btn add">Ajouter un élève</button>
+      <Link to="/create">
+        <button type="button" className="btn add">Ajouter un élève</button>
+      </Link>
 
     </div>
 

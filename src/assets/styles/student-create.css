@@ -1,0 +1,13 @@
+.student-create-container {
+  text-align: center;
+}
+
+
+.student-create {  
+  width: 500px;
+  padding: 50px;
+  background: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 150px;
+}
