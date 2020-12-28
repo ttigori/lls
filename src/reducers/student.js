@@ -16,12 +16,11 @@ export default (state = initialState, action) => {
   switch (type) {
     case ADD_STUDENT: {
       const newStudents = state.students;
-      console.log('PAYLOAD', payload);
       newStudents.push(payload);
 
       return {
         ...state,
-        students: newStudents,
+        students: newStudents.filter((student) => student !== undefined),
       };
     }
     case GET_STUDENTS: {

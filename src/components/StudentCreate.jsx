@@ -52,8 +52,7 @@ const StudentCreate = () => {
 
         <div className="mb-3">
           <label htmlFor="gender" className="form-label">Sexe</label>
-          <select onChange={(e) => setGender(e.target.value)} id="gender" className="form-select" aria-label="Default select example">
-            <option value="none" selected disabled hidden> Selectionnez le sexe </option>
+          <select value={gender} onChange={(e) => setGender(e.target.value)} id="gender" className="form-select" aria-label="Default select example">
             <option value="Masculin">Masculin</option>
             <option value="Féminin">Féminin</option>
           </select>

@@ -12,7 +12,7 @@ const students = [
     first_name: 'Aurelie',
     last_name: 'Brière',
     age: 9,
-    gender: 'Feminin',
+    gender: 'Féminin',
 
   },
   {
@@ -28,7 +28,7 @@ const students = [
     first_name: 'Emma',
     last_name: 'Jardinère',
     age: 10,
-    gender: 'Feminin',
+    gender: 'Féminin',
 
   },
   {
@@ -36,7 +36,7 @@ const students = [
     first_name: 'Jeanne',
     last_name: 'Dujardin',
     age: 9,
-    gender: 'Feminin',
+    gender: 'Féminin',
 
   },
 ];
