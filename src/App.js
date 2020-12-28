@@ -1,4 +1,4 @@
-import Classroom from './classroom/Classroom'
+import Classroom from './classroom/Classroom';
 
 function App() {
   return (
