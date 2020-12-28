@@ -7,7 +7,7 @@ const StudentCreate = () => {
   const [last_name, setLastName] = useState('');
   const [first_name, setFirstName] = useState('');
   const [age, setAge] = useState(null);
-  const [gender, setGender] = useState('');
+  const [gender, setGender] = useState('Masculin');
   const [redirect, setRedirect] = useState(false);
   const { students } = useSelector((state) => state.student);
 
