@@ -1,0 +1,10 @@
+.classroom {
+  margin-left: 100px;
+}
+
+
+.students{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}

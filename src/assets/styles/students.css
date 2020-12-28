@@ -32,7 +32,6 @@
   display: inline-block;
   padding: 5px 15px;
   cursor: pointer;
-  background: #5cb85c;
   border: none;
   color: #fff;
   border-radius: 5px;
@@ -40,6 +39,14 @@
 
 .delete {
   background: #d9534f;
+}
+
+.edit {
+  background: #5cb85c;
+}
+
+.add {
+  background: #047aed;
 }
 
 .btn-outline {

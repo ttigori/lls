@@ -4,7 +4,9 @@ import studentImg  from '../assets/media/images/student.png';
 
 
 
-const Student = () => {
+const Student = (props) => {
+
+  const {first_name, last_name, age, gender} = props;
 
 
   return(
@@ -12,26 +14,24 @@ const Student = () => {
       <img className="card-img-top" src={studentImg} alt="Image élève"/>
       <div class="card-body">
         <div className="card-item">
-          <span style={{fontSize: '1.2rem', marginRight: '5px'}}>
-            Nom:
-          </span>
-          Adrien
+          <span> Nom: </span> {last_name}
         </div>
 
         <div className="card-item">
-          <span> Prenom: </span> Adrien
+          <span> Prenom: </span> {first_name}
         </div>
 
         <div className="card-item">
-          <span>
-            Sexe:
-          </span>
-          Masculin
+          <span> Sexe: </span> {gender}
+        </div>
+
+        <div className="card-item">
+          <span> Age: </span> {age}
         </div>
 
         <div className="btn-container">
 
-          <button className="btn">Modifier</button>
+          <button className="btn edit">Modifier</button>
           <button className="btn delete">Supprimer</button>
 
         </div>
